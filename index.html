@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website with Photo Background</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('laying.jpg'); /* Replace 'background.jpg' with your actual background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-container {
+    position: absolute;
+    left: -0.5rem; /* Adjust as needed */
+    top: 80%; /* Center vertically */
+    transform: translateY(-50%);
+    text-align: left; /* Align buttons to the left */
+  }
+  .button-container button {
+    display: block;
+    width: 200px;
+    margin: 0rem; /* Adjust vertical spacing */
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(238, 139, 10);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .button-container button:hover {
+    background-color:none;
+  }
+</style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="window.location.href='index.html'">O7C</button>
+    <button onclick="window.location.href='shop.html'">SHOP</button>
+    <button onclick="window.location.href='about.html'">ABOUT</button>
+  </div>
+</body>
+</html>
